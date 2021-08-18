@@ -1,264 +1,340 @@
 * {
-    font-size: 14px;
-    box-sizing: border-box;
-  }
-  
-  p {
-    margin: 0;  
-  }
-  
-  .text-secondary {
-    color: #989898;
-  }
-  
-  .text-bold {
-    font-weight: bold;
-  }
-  
-  .text-normal {
-    font-weight: normal;
-  }
-  
-  .text-point {
-    color: #18a0fb;
-  }
-  
-  .text-mini {
-    font-size: 12px;
-  }
-  
-  .row:not(.self-banner), .logo {
-    padding: 0 16px;
-  }
-  
-  .row + .row {
-    margin-top: 60px;
-  }
-  
-  .row-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .row-title > :first-child {
-    font-weight: 600;
-    font-size: 16px;
-  }
-  
-  .row-title + .row-contents {
-    margin-top: 8px;
-  }
-  
-  .home {
-    position: relative;
-  }
-  
-  .logo {
-    color: #18a0fb;
-    margin-bottom: 24px;
-  }
-  
-  .pen-icon {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: #F1F1F1;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .fa-pen {
-    font-size: 10px;
-  }
-  
-  .more-button {
-    color: #989898;
-    font-size: 12px;
-  }
-  
-  .my-car {
-    width: 100%;
-    height: 185px;
-    background-color: #f2f2f2;
-    border-radius: 16px;
-    
-    position: relative;
-  }
-  
-  .car-number-wrapper {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    background-color: #fff;
-    border-radius: 4px;
-  }
-  
-  .car-number {
-    padding: 10px;
-    margin: 2px;
-    border: 2px solid #222222;
-    border-radius: 4px;
-    text-align: center;
-  }
-  
-  .my-reservation {
-    display: flex;
-    align-items: center;
-    height: 80px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px 0 rgba(34, 34, 34, 0.08);
-  }
-  
-  .my-reservation > img {
-    width: 80px;
-    height: 80px;
-    background-color: #989898;
-    border-radius: 8px 0 0 8px;
-  }
-  
-  .my-reservation-info {
-    margin-left: 24px;
-  }
-  
-  .my-reservation-info > p {
-    font-size: 12px;
-  }
-  
-  .my-reservation-info > p:nth-child(2) {
-    font-size: 14px;
-    margin: 4px 0 8px;
-  }
-  
-  .my-consulting {
-    width: 100%;
-    height: 95px;
-    background-color: #1a2a41;
-    border-radius: 8px;
-    color: #fff;
-    padding: 16px;
-  }
-  
-  .my-consulting-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .my-consulting-text {
-    margin-top: 8px;
-    line-height: 21px;
-  }
-  
-  .slider {
-    overflow: auto;
-  }
-  
-  .slider-item-wrapper {
-    display: flex;
-    align-items: center;
-  }
-  
-  .slider-item {
-    width: 120px;
-  }
-  
-  .slider-item + .slider-item {
-    margin-left: 16px;
-  }
-  
-  .slider-item > p {
-    margin-top: 4px;
-  }
-  
-  .slider-item-img {
-    width: 120px;
-    height: 120px;
-    border: 1px solid #F6F6F6;
-    border-radius: 8px;
-    background-color: #fff;
-  }
-  
-  .sliter-item-des {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  
-  .report-banner {
-    height: 120px;
-    border-radius: 8px;
-    background-color: #989898;
-  }
-  
-  .consulting-banner {
-    height: 90px;
-    border-radius: 8px;
-    background-color: #989898;
-  }
-  
-  .self-banner > .row-title {
-    padding: 0 16px;
-  }
-  
-  .self-banner > .row-contents {
-    height: 155px;
-    background-color: #989898;
-  }
-  
-  .footer {
-    background-color: #F6F6F6;
-    padding: 32px 16px 19px;
-  }
-  
-  .footer > div + div {
-    margin-top: 8px;
-  }
-  
-  .footer > div, .footer > ul > li {
-    font-size: 10px;
-  }
-  
-  .company-name {
-    font-size: 11px;
-    font-weight: 600;
-  }
-  
-  .footer > ul {
-    padding-inline-start: 6px;
-    list-style-type: '-';
-  }
-  
-  .menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .menu-item {
-    width: 72px;
-    height: 55px;
-    text-align: center;
-    font-size: 12px;
-    margin-top: 4px;
-    color: #D7DDE4;
-    padding: 14px 8px;
-  }
-  
-  .menu-item.active {
-    color:#18a0fb;
-  }
-  
-  .setting-button {
-    position: absolute;
-    bottom: 72px;
-    right: 16px;
-  
-    width: 56px;
-    height: 56px;
-    background-color: #0136C4;
-    border-radius: 50%;
-  }
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+.text-secondary {
+  color: #989898;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-normal {
+  font-weight: normal;
+}
+
+.text-point {
+  color: #18a0fb;
+}
+
+.text-mini {
+  font-size: 12px;
+}
+
+.row:not(.self-banner),
+.logo {
+  padding: 0 16px;
+}
+
+.row + .row {
+  margin-top: 56px;
+}
+
+.row-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row-title > :first-child {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.row-title + .row-contents {
+  margin-top: 8px;
+}
+
+.home {
+  position: relative;
+}
+
+.logo {
+  color: #18a0fb;
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.pen-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-pen {
+  font-size: 10px;
+}
+
+.more-button {
+  color: #989898;
+  font-size: 12px;
+}
+
+.my-car {
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+
+  position: relative;
+}
+
+.car-number-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.car-number {
+  padding: 10px;
+  margin: 2px;
+  border: 2px solid #222222;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.my-car ul {
+  width: calc(100% * 3);
+  display: flex;
+  transition: 1s;
+  padding: 0;
+  margin: 0;
+}
+
+.my-car li {
+  list-style: none;
+  width: calc(100% / 3);
+  height: 185px;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 16px;
+}
+
+.my-car input {
+  display: none;
+}
+
+.my-car .bullet {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  text-align: center;
+  z-index: 10;
+}
+
+.my-car .bullet label {
+  width: 4px;
+  height: 4px;
+  border-radius: 10px;
+  display: inline-block;
+  background: rgba(1, 54, 196, 0.2);
+  font-size: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* 슬라이드 조작 */
+#pos1:checked ~ ul {
+  margin-left: 0;
+}
+#pos2:checked ~ ul {
+  margin-left: -100%;
+}
+#pos3:checked ~ ul {
+  margin-left: -200%;
+}
+/* bullet 조작 */
+#pos1:checked ~ .bullet label:nth-child(1),
+#pos2:checked ~ .bullet label:nth-child(2),
+#pos3:checked ~ .bullet label:nth-child(3) {
+  background: #38b4e8;
+  width: 12px;
+}
+
+.my-car li:nth-child(1) {
+  background: #ffa;
+}
+.my-car li:nth-child(2) {
+  background: #faa;
+}
+.my-car li:nth-child(3) {
+  background: #afa;
+}
+
+.my-reservation {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(34, 34, 34, 0.08);
+}
+
+.my-reservation > img {
+  width: 80px;
+  height: 80px;
+  background-color: #989898;
+  border-radius: 8px 0 0 8px;
+}
+
+.my-reservation-info {
+  margin-left: 24px;
+}
+
+.my-reservation-info > p {
+  font-size: 12px;
+}
+
+.my-reservation-info > p:nth-child(2) {
+  font-size: 14px;
+  margin: 4px 0 8px;
+}
+
+.my-consulting {
+  width: 100%;
+  height: 95px;
+  background-color: #1a2a41;
+  border-radius: 8px;
+  color: #fff;
+  padding: 16px;
+}
+
+.my-consulting-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.my-consulting-text {
+  margin-top: 8px;
+  line-height: 21px;
+}
+
+.slider {
+  overflow: auto;
+}
+
+.slider-item-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.slider-item {
+  width: 120px;
+}
+
+.slider-item + .slider-item {
+  margin-left: 16px;
+}
+
+.slider-item > p {
+  margin-top: 4px;
+}
+
+.slider-item-img {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #f6f6f6;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.sliter-item-des {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.report-banner {
+  height: 120px;
+  border-radius: 8px;
+  background-color: #989898;
+}
+
+.consulting-banner {
+  height: 90px;
+  border-radius: 8px;
+  background-color: #989898;
+}
+
+.self-banner > .row-title {
+  padding: 0 16px;
+}
+
+.self-banner > .row-contents {
+  height: 155px;
+  background-color: #989898;
+}
+
+.footer {
+  background-color: #f6f6f6;
+  padding: 32px 16px 19px;
+}
+
+.footer > div + div {
+  margin-top: 8px;
+}
+
+.footer > div,
+.footer > ul > li {
+  font-size: 10px;
+}
+
+.company-name {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.footer > ul {
+  padding-inline-start: 6px;
+  list-style-type: "-";
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item {
+  width: 72px;
+  height: 55px;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 4px;
+  color: #d7dde4;
+  padding: 14px 8px;
+}
+
+.menu-item-text {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.menu-item.active {
+  color: #18a0fb;
+}
+
+.setting-button {
+  position: absolute;
+  bottom: 72px;
+  right: 16px;
+
+  width: 56px;
+  height: 56px;
+  background-color: #0136c4;
+  border-radius: 50%;
+}
