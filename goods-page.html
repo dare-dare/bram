@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/goods-page.css" />
+  </head>
+  <body>
+    <div class="goods-page">
+      <div class="header">
+        <img src="image/icon-arrow.png" />
+        <span>엔진오일세트</span>
+        <span></span>
+      </div>
+      <div class="goods-img-wrapper">
+        <img class="goods-img" src="image/goods.png" />
+      </div>
+      <div class="goods-info">
+        <p class="goods-brand">브랜드명</p>
+        <p class="goods-title">엔진오일세트</p>
+        <div>
+          <p class="strikethrough text-secondary">121,900원</p>
+          <p class="goods-price">
+            <span class="text-point text-bold">121,900</span>
+            <span>원</span>
+            <span class="text-warn">30%</span>
+          </p>
+        </div>
+        <div class="goods-noti">
+          <div class="goods-noti-text">
+            이 상품은 순정부품이며, 견적은 공임비와 VAT가 포함된 금액입니다.
+            자세한 계산 방법은 아래를 참고해주세요.
+          </div>
+        </div>
+      </div>
+      <div class="tabs-wrapper">
+        <ul class="tabs">
+          <li class="active">
+            <a href="#tab1" class="tab">상품설명</a>
+          </li>
+          <li>
+            <a href="#tab2" class="tab">상품문의</a>
+          </li>
+        </ul>
+        <div class="tab-pages">
+          <div id="tab1" class="page active">Tab Content1</div>
+          <div id="tab2" class="page">Tab Content2</div>
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <div class="button">구매하기</div>
+      </div>
+    </div>
+    <script>
+      const tabList = document.querySelectorAll(".tabs-wrapper .tabs li");
+      const contents = document.querySelectorAll(
+        ".tabs-wrapper .tab-pages .page"
+      );
+      let activeCont = "";
+
+      for (var i = 0; i < tabList.length; i++) {
+        tabList[i]
+          .querySelector(".tab")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            for (var j = 0; j < tabList.length; j++) {
+              tabList[j].classList.remove("active");
+              contents[j].style.display = "none";
+            }
+
+            this.parentNode.classList.add("active");
+            activeCont = this.getAttribute("href");
+            document.querySelector(activeCont).style.display = "block";
+          });
+      }
+    </script>
+  </body>
+</html>
